@@ -1,0 +1,12 @@
+.left-wrap {
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+    p{
+        margin: 0;
+    }
+}

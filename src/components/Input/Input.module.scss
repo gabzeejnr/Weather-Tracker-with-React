@@ -1,0 +1,56 @@
+.input{
+    margin-top: 2rem;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    gap: 1em;
+
+    input{
+        min-width: 200px;
+        height: 2em;
+        border-radius: 1rem;
+        padding: 0 1rem 0 1.5rem;
+        border: 1px solid;
+
+        &:focus{
+            outline: 1px solid;
+        }
+    }
+
+    button{
+        padding: 10px;
+        border-radius: 1em;
+        border: 1px solid;
+        box-shadow: 0 0 2px 1px var(--text);
+        transition: all 1s;
+        cursor: pointer;
+        animation: bounce infinite 3s ease-in-out;
+
+        &:hover{
+            background: linear-gradient(blue, green);
+            border: 1px solid;
+            box-shadow: inset 0 0 5px 1px white;
+            color: var(--text);
+
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50%{
+                    transform: translateY(5px);
+                }
+            }
+        }
+    }
+}
+
+.icon-wrap{
+
+    svg{
+        position: relative;
+        color: black;
+        left: 10%;
+        top: 50%;
+        bottom: 0;
+    }
+}

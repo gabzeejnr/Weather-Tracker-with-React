@@ -1,0 +1,29 @@
+.section-wrapper{
+    color: var(--text);
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+
+    .right{
+        margin-left: auto;
+        display: grid;
+        place-items: center;
+
+        .blink{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background: var(--blink);
+            animation: blinker 3s linear infinite;
+        }
+    }
+}
+
+@keyframes blinker {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .1;
+    }
+}

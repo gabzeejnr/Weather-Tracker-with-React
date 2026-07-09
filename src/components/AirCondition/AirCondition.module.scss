@@ -1,0 +1,23 @@
+.wrapper{
+    color: var(--text);
+    display: flex;
+    text-align: center;
+    gap: .5rem;
+    margin-top: 1rem;
+
+    .condition{
+        flex: 1;
+        border: 1px solid var(--text);
+        border-radius: 1rem;
+        min-height: 100px;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 1px 5px 0px var(--text);
+        backdrop-filter: blur(10px);
+
+        h3{
+            margin: 0;
+        }
+    }
+}
+

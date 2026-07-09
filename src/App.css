@@ -1,0 +1,38 @@
+html{
+    scrollbar-width: none;
+}
+
+:root {
+    --white: whitesmoke;
+    --text: black;
+    --blink: rgb(0, 95, 0);
+}
+
+.dark-theme{
+    background: rgb(30, 30, 30);
+    transition: background 1s;
+    --text: white;
+    --blink: rgb(0, 255, 0);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    width: 100vw;
+    display: grid;
+    overflow-x: hidden;
+    transition: background 1s;
+    background: url("https://www.nps.gov/articles/images/Great-Meadow-Grass.jpg?maxwidth=650&autorotate=false&quality=78&format=webp") center / cover no-repeat;
+}
+
+#root {
+    margin: 0;
+}
+
+#App {
+    margin: 0;
+    font-family: system-ui;
+    min-height: 100vh;
+}
